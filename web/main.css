@@ -1,0 +1,39 @@
+body {
+    background-color: #B2FEFA;
+    background: -webkit-linear-gradient(to right, #B2FEFA, #0ED2F7);
+    background: linear-gradient(to right, #B2FEFA, #0ED2F7);
+     
+
+}
+
+#location {
+    display: block;
+    border: none;
+    background: rgb(255, 255, 255, .5);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    outline: none;
+    width: 70%;
+    font-size: 30px;
+}
+
+#show {
+    display: block;
+    background-color: #D66D75;
+    background: -webkit-linear-gradient(to left, #D66D75, #E29587);
+    background: linear-gradient(to left, #D66D75, #E29587);
+
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    outline: none;
+    width: 70%;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+#show:hover{
+    opacity: .9;
+}
