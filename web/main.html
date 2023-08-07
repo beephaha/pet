@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Weather</title>
+
+    <script src="eel.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body>
+    <input id ="location" type="text" placeholder="type needed city..." required=" " value="Los Angeles, USA">
+
+    <button id="show">Show the result</button>
+
+    <div class = "info"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        
+        async function display_weather() {
+            let place = document.getElementById('#location').value;
+            let res = await eel.get_weather(place)();
+            document.getElementById('#info').innerHTML = res;
+        }
+        jQuery('#show').on('click', function() { 
+            display_weather();
+        });
+    </script>
+</body>
+</html>
